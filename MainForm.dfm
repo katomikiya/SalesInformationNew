@@ -58,12 +58,12 @@ object Form1: TForm1
     end
     object Label3: TLabel
       Left = 26
-      Top = 74
+      Top = 79
       Width = 46
       Height = 16
       Caption = #21830#21697'ID'
     end
-    object RzDBLabel1: TRzDBLabel
+    object lblCustomerName: TRzDBLabel
       Left = 122
       Top = 38
       Width = 177
@@ -71,9 +71,9 @@ object Form1: TForm1
       BorderOuter = fsLowered
       BorderColor = clInfoText
     end
-    object RzDBLabel2: TRzDBLabel
+    object lblItemName: TRzDBLabel
       Left = 122
-      Top = 102
+      Top = 103
       Width = 177
       Height = 24
       BorderOuter = fsLowered
@@ -81,38 +81,80 @@ object Form1: TForm1
     end
     object Label4: TLabel
       Left = 122
-      Top = 74
+      Top = 79
       Width = 48
       Height = 16
       Caption = #21830#21697#21517
     end
     object Label5: TLabel
-      Left = 531
-      Top = 74
+      Left = 345
+      Top = 79
       Width = 32
       Height = 16
-      Caption = #37329#38989
+      Caption = #21336#20385
     end
     object Label6: TLabel
-      Left = 514
+      Left = 345
       Top = 16
       Width = 32
       Height = 16
       Caption = #25968#37327
     end
     object Label7: TLabel
-      Left = 378
+      Left = 643
       Top = 16
       Width = 64
       Height = 16
       Caption = #20253#31080#21306#20998
     end
     object Label8: TLabel
-      Left = 393
-      Top = 74
+      Left = 643
+      Top = 79
       Width = 32
       Height = 16
       Caption = #20633#32771
+    end
+    object Label9: TLabel
+      Left = 435
+      Top = 16
+      Width = 32
+      Height = 16
+      Caption = #21336#20301
+    end
+    object lblUnit: TRzDBLabel
+      Left = 435
+      Top = 41
+      Width = 76
+      Height = 17
+    end
+    object lblUnitPrice: TRzDBLabel
+      Left = 345
+      Top = 103
+      Width = 71
+      Height = 24
+      BorderOuter = fsLowered
+      BorderColor = clInfoText
+    end
+    object Label10: TLabel
+      Left = 464
+      Top = 79
+      Width = 32
+      Height = 16
+      Caption = #37329#38989
+    end
+    object Label11: TLabel
+      Left = 581
+      Top = 105
+      Width = 16
+      Height = 16
+      Caption = #20870
+    end
+    object Label12: TLabel
+      Left = 420
+      Top = 105
+      Width = 16
+      Height = 16
+      Caption = #20870
     end
     object Panel5: TPanel
       Left = 0
@@ -136,8 +178,8 @@ object Form1: TForm1
       end
     end
     object btnRegister: TButton
-      Left = 794
-      Top = 395
+      Left = 800
+      Top = 387
       Width = 113
       Height = 85
       Cursor = crHandPoint
@@ -152,7 +194,7 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
     end
-    object RzButtonEdit1: TRzButtonEdit
+    object edCustomerCode: TRzButtonEdit
       Left = 26
       Top = 38
       Width = 90
@@ -162,7 +204,7 @@ object Form1: TForm1
       AltBtnWidth = 15
       ButtonWidth = 15
     end
-    object RzButtonEdit2: TRzButtonEdit
+    object edItemID: TRzButtonEdit
       Left = 26
       Top = 102
       Width = 90
@@ -171,6 +213,38 @@ object Form1: TForm1
       TabOrder = 3
       AltBtnWidth = 15
       ButtonWidth = 15
+    end
+    object nedAmount: TRzDBNumericEdit
+      Left = 345
+      Top = 38
+      Width = 85
+      Height = 24
+      Alignment = taLeftJustify
+      TabOrder = 4
+      DisplayFormat = ',0;(,0)'
+    end
+    object cmbVourcherClass: TRzDBComboBox
+      Left = 643
+      Top = 39
+      Width = 85
+      Height = 24
+      TabOrder = 5
+    end
+    object nedPrice: TRzDBNumericEdit
+      Left = 464
+      Top = 102
+      Width = 111
+      Height = 24
+      Alignment = taLeftJustify
+      TabOrder = 6
+      DisplayFormat = ',0;(,0)'
+    end
+    object edRemarks: TDBEdit
+      Left = 643
+      Top = 102
+      Width = 264
+      Height = 24
+      TabOrder = 7
     end
   end
   object Panel3: TPanel

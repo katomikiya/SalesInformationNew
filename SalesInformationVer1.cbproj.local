@@ -3,13 +3,13 @@
 	<Transactions>
     <Transaction>2021/08/05 17:22:17.000.330,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2021/08/05 17:22:18.000.906,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/23 14:32:50.000.799,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2021/09/23 14:32:50.000.158,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/23 14:34:43.000.910,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\勉強用フォルダ\sales_information_ver.1\MainForm.cpp</Transaction>
-    <Transaction>2021/09/23 14:34:43.000.910,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\勉強用フォルダ\sales_information_ver.1\MainForm.dfm</Transaction>
-    <Transaction>2021/09/23 14:34:43.000.910,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\勉強用フォルダ\sales_information_ver.1\MainForm.h</Transaction>
-    <Transaction>2021/09/23 14:35:26.000.724,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\勉強用フォルダ\sales_information_ver.1\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/23 14:36:10.000.028,C:\勉強用フォルダ\sales_information_ver.1\Project1PCH1.h=C:\勉強用フォルダ\sales_information_ver.1\SalesInformationVer1PCH1.h</Transaction>
-    <Transaction>2021/09/23 14:36:10.000.044,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\勉強用フォルダ\sales_information_ver.1\SalesInformationVer1.cbproj</Transaction>
+    <Transaction>2021/09/23 14:32:50.000.799,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/09/23 14:34:43.000.910,C:\勉強用フォルダ\sales_information_ver.1\MainForm.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/09/23 14:34:43.000.910,C:\勉強用フォルダ\sales_information_ver.1\MainForm.dfm=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/09/23 14:34:43.000.910,C:\勉強用フォルダ\sales_information_ver.1\MainForm.cpp=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/09/23 14:35:26.000.724,C:\勉強用フォルダ\sales_information_ver.1\Project1PCH1.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/23 14:36:10.000.028,C:\勉強用フォルダ\sales_information_ver.1\SalesInformationVer1PCH1.h=C:\勉強用フォルダ\sales_information_ver.1\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/23 14:36:10.000.044,C:\勉強用フォルダ\sales_information_ver.1\SalesInformationVer1.cbproj=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
   </Transactions>
 </BorlandProject>

@@ -1,25 +1,17 @@
 //---------------------------------------------------------------------------
 
-#include <vcl.h>
+
 #pragma hdrstop
 
-#include "MainForm.h"
+#include "DataModule.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-#pragma link "RzBtnEdt"
-#pragma link "RzDBLbl"
-#pragma link "RzEdit"
-#pragma link "RzLabel"
-#pragma link "RzCmboBx"
-#pragma link "RzDBCmbo"
-#pragma link "RzDBEdit"
+#pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TDataModule1 *DataModule1;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TDataModule1::TDataModule1(TComponent* Owner)
+	: TDataModule(Owner)
 {
 }
 //---------------------------------------------------------------------------
-
-

@@ -17,6 +17,9 @@
 #include <Vcl.DBGrids.hpp>
 #include <Vcl.Grids.hpp>
 #include <Vcl.Mask.hpp>
+#include "RzCmboBx.hpp"
+#include "RzDBCmbo.hpp"
+#include "RzDBEdit.hpp"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -44,15 +47,25 @@ __published:	// IDE で管理されるコンポーネント
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
-	TRzButtonEdit *RzButtonEdit1;
-	TRzDBLabel *RzDBLabel1;
-	TRzButtonEdit *RzButtonEdit2;
-	TRzDBLabel *RzDBLabel2;
+	TRzButtonEdit *edCustomerCode;
+	TRzDBLabel *lblCustomerName;
+	TRzButtonEdit *edItemID;
+	TRzDBLabel *lblItemName;
 	TLabel *Label4;
 	TLabel *Label5;
 	TLabel *Label6;
 	TLabel *Label7;
 	TLabel *Label8;
+	TRzDBNumericEdit *nedAmount;
+	TLabel *Label9;
+	TRzDBComboBox *cmbVourcherClass;
+	TRzDBLabel *lblUnit;
+	TRzDBLabel *lblUnitPrice;
+	TLabel *Label10;
+	TRzDBNumericEdit *nedPrice;
+	TLabel *Label11;
+	TLabel *Label12;
+	TDBEdit *edRemarks;
 private:	// ユーザー宣言
 public:		// ユーザー宣言
 	__fastcall TForm1(TComponent* Owner);
