@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "DataModule.h"
+#include "MainForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma classgroup "Vcl.Controls.TControl"
@@ -13,5 +14,6 @@ TDataModule1 *DataModule1;
 __fastcall TDataModule1::TDataModule1(TComponent* Owner)
 	: TDataModule(Owner)
 {
+	FDConnection1->Close();
 }
 //---------------------------------------------------------------------------

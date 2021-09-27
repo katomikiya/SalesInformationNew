@@ -12,6 +12,8 @@ object Form1: TForm1
   Font.Style = []
   KeyPreview = True
   OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 16
   object Panel1: TPanel
@@ -37,9 +39,8 @@ object Form1: TForm1
     Width = 940
     Height = 515
     Align = alClient
+    Locked = True
     TabOrder = 1
-    ExplicitLeft = -1
-    ExplicitTop = 60
     object Label1: TLabel
       Left = 26
       Top = 16
@@ -70,6 +71,8 @@ object Form1: TForm1
       Height = 24
       BorderOuter = fsLowered
       BorderColor = clInfoText
+      DataField = 'customer_name'
+      DataSource = DataModule1.DataSource2
     end
     object lblItemName: TRzDBLabel
       Left = 122
@@ -78,6 +81,8 @@ object Form1: TForm1
       Height = 24
       BorderOuter = fsLowered
       BorderColor = clInfoText
+      DataField = 'item_name'
+      DataSource = DataModule1.DataSource3
     end
     object Label4: TLabel
       Left = 122
@@ -169,12 +174,110 @@ object Form1: TForm1
         Width = 759
         Height = 377
         Align = alClient
+        Color = clBtnFace
+        DataSource = DataModule1.DataSource1
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
         TitleFont.Height = -16
         TitleFont.Name = #65325#65331' '#65328#12468#12471#12483#12463
         TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'customer_name'
+            Title.Caption = #39015#23458#21517
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 130
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'item_code'
+            Title.Caption = #21830#21697#12467#12540#12489
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 109
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'item_name'
+            Title.Caption = #21830#21697#21517
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 132
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'amount'
+            Title.Caption = #25968#37327
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'unit'
+            Title.Caption = #21336#20301
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 42
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'price'
+            Title.Caption = #37329#38989
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 73
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'voucher_class'
+            Title.Caption = #20253#31080#21306#20998
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 74
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'remarks'
+            Title.Caption = #20633#32771
+            Title.Font.Charset = DEFAULT_CHARSET
+            Title.Font.Color = clWindowText
+            Title.Font.Height = -16
+            Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+            Title.Font.Style = [fsBold]
+            Width = 84
+            Visible = True
+          end>
       end
     end
     object btnRegister: TButton
@@ -194,49 +297,43 @@ object Form1: TForm1
       ParentFont = False
       TabOrder = 1
     end
-    object edCustomerCode: TRzButtonEdit
-      Left = 26
-      Top = 38
-      Width = 90
-      Height = 24
-      Text = ''
-      TabOrder = 2
-      AltBtnWidth = 15
-      ButtonWidth = 15
-    end
-    object edItemID: TRzButtonEdit
-      Left = 26
-      Top = 102
-      Width = 90
-      Height = 24
-      Text = ''
-      TabOrder = 3
-      AltBtnWidth = 15
-      ButtonWidth = 15
-    end
     object nedAmount: TRzDBNumericEdit
       Left = 345
       Top = 38
       Width = 85
       Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'amount'
       Alignment = taLeftJustify
-      TabOrder = 4
+      TabOrder = 2
       DisplayFormat = ',0;(,0)'
     end
     object cmbVourcherClass: TRzDBComboBox
       Left = 643
-      Top = 39
+      Top = 38
       Width = 85
       Height = 24
-      TabOrder = 5
+      DataField = 'voucher_class'
+      DataSource = DataModule1.DataSource1
+      TabOrder = 3
+      Items.Strings = (
+        #26410#36984#25246
+        #29694#37329
+        #25499#22770#19978)
+      Values.Strings = (
+        '0'
+        '1'
+        '2')
     end
     object nedPrice: TRzDBNumericEdit
       Left = 464
       Top = 102
       Width = 111
       Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'price'
       Alignment = taLeftJustify
-      TabOrder = 6
+      TabOrder = 4
       DisplayFormat = ',0;(,0)'
     end
     object edRemarks: TDBEdit
@@ -244,7 +341,31 @@ object Form1: TForm1
       Top = 102
       Width = 264
       Height = 24
+      DataField = 'remarks'
+      DataSource = DataModule1.DataSource1
+      TabOrder = 5
+    end
+    object edCustomerCode: TRzDBButtonEdit
+      Left = 26
+      Top = 38
+      Width = 90
+      Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'customer_code'
+      TabOrder = 6
+      AltBtnWidth = 15
+      ButtonWidth = 15
+    end
+    object edItemID: TRzDBButtonEdit
+      Left = 26
+      Top = 101
+      Width = 90
+      Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'item_id'
       TabOrder = 7
+      AltBtnWidth = 15
+      ButtonWidth = 15
     end
   end
   object Panel3: TPanel
@@ -265,8 +386,6 @@ object Form1: TForm1
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
-      ExplicitLeft = 57
-      ExplicitTop = -5
     end
     object PanelFooter: TPanel
       Left = 1
@@ -277,7 +396,6 @@ object Form1: TForm1
       Color = clGradientInactiveCaption
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 36
       object btnF2: TButton
         Left = 81
         Top = 2
@@ -381,6 +499,7 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 8
         TabStop = False
+        OnClick = btnF12Click
       end
       object btnF9: TButton
         Left = 635
@@ -401,6 +520,7 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 9
         TabStop = False
+        OnClick = btnF9Click
       end
       object btnF4: TButton
         Left = 219
@@ -421,6 +541,7 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 10
         TabStop = False
+        OnClick = btnF4Click
       end
       object btnF5: TButton
         Left = 323
@@ -442,5 +563,14 @@ object Form1: TForm1
         TabStop = False
       end
     end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 736
+    Top = 16
+  end
+  object NotificationCenter1: TNotificationCenter
+    Left = 808
+    Top = 16
   end
 end

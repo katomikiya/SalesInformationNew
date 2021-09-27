@@ -20,6 +20,10 @@
 #include "RzCmboBx.hpp"
 #include "RzDBCmbo.hpp"
 #include "RzDBEdit.hpp"
+#include <System.Notification.hpp>
+#include "RzDBBnEd.hpp"
+
+#include "DataModule.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -29,7 +33,6 @@ __published:	// IDE で管理されるコンポーネント
 	TPanel *Panel3;
 	TDBNavigator *DBNavigator1;
 	TPanel *Panel5;
-	TDBGrid *DBGrid1;
 	TButton *btnRegister;
 	TPanel *PanelFooter;
 	TButton *btnF2;
@@ -47,9 +50,7 @@ __published:	// IDE で管理されるコンポーネント
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
-	TRzButtonEdit *edCustomerCode;
 	TRzDBLabel *lblCustomerName;
-	TRzButtonEdit *edItemID;
 	TRzDBLabel *lblItemName;
 	TLabel *Label4;
 	TLabel *Label5;
@@ -66,7 +67,18 @@ __published:	// IDE で管理されるコンポーネント
 	TLabel *Label11;
 	TLabel *Label12;
 	TDBEdit *edRemarks;
+	TTimer *Timer1;
+	TNotificationCenter *NotificationCenter1;
+	TRzDBButtonEdit *edCustomerCode;
+	TRzDBButtonEdit *edItemID;
+	TDBGrid *DBGrid1;
+	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall btnF4Click(TObject *Sender);
+	void __fastcall btnF9Click(TObject *Sender);
+	void __fastcall btnF12Click(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
 private:	// ユーザー宣言
+        bool __fastcall CloseApplication();
 public:		// ユーザー宣言
 	__fastcall TForm1(TComponent* Owner);
 };
