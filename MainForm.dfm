@@ -72,7 +72,7 @@ object Form1: TForm1
       BorderOuter = fsLowered
       BorderColor = clInfoText
       DataField = 'customer_name'
-      DataSource = DataModule1.DataSource2
+      DataSource = DataModule1.DataSource1
     end
     object lblItemName: TRzDBLabel
       Left = 122
@@ -82,7 +82,7 @@ object Form1: TForm1
       BorderOuter = fsLowered
       BorderColor = clInfoText
       DataField = 'item_name'
-      DataSource = DataModule1.DataSource3
+      DataSource = DataModule1.DataSource1
     end
     object Label4: TLabel
       Left = 122
@@ -139,6 +139,8 @@ object Form1: TForm1
       Height = 24
       BorderOuter = fsLowered
       BorderColor = clInfoText
+      DataField = 'unit_price'
+      DataSource = DataModule1.DataSource1
     end
     object Label10: TLabel
       Left = 464
